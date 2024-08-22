@@ -39,6 +39,7 @@ const translations = {
       educationContent: "bienvenue sur la troisième page",
       viewMore: "Voir Plus →"
   }
+  
 };
 
 // Function to change the language

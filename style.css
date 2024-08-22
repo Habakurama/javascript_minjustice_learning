@@ -124,10 +124,11 @@ text-align: center;
 
 
 }
-footer a{
+.footer a{
   display: flexbox;
   justify-content: space-between;
   align-items: center;
+  padding: 20px;
 
 }
 @media(max-width:350px){
