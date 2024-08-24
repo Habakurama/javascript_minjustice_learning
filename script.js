@@ -11,7 +11,7 @@ const translations = {
       offendersContent: "welcome to second page",
       educationTitle: "Educational Content",
       educationContent: "welcome to third page",
-      viewMore: "View More →"
+      viewMore: "View More →",
   },
   rw: {
       home: "Ahabanza",
@@ -55,6 +55,7 @@ function changeLanguage(lang) {
   document.getElementById('educationTitle').textContent = translations[lang].educationTitle;
   document.getElementById('educationContent').textContent = translations[lang].educationContent;
   document.querySelectorAll('a[id$="Link"]').forEach(el => el.textContent = translations[lang].viewMore);
+
 }
 
 // Event listener for language button click to toggle the dropdown
@@ -82,4 +83,4 @@ document.querySelectorAll('.language-options button').forEach(button => {
 });
 
 // Set the default language to English
-changeLanguage('en');
+changeLanguage('eng');
