@@ -1,4 +1,4 @@
-// Translations for different languages
+// object Translations for different languages
 const translations = {
   en: {
       home: "Home",
@@ -21,7 +21,7 @@ const translations = {
       mainTitle: "Ikigo cy'Igihugu Gishinzwe Ubushinjacyaha (NPPA) Urutonde rw'Abakoze Ibyaha byo Gufata ku Ngufu",
       remarksTitle: "Ibisobanuro",
       remarksContent: "murakaza neza ku rupapuro rwa mbere",
-      offendersTitle: "Abakora Ibyaha",
+      offendersTitle: "Abahamijwe ibyaha Ibyaha",
       languageBtn: "Hitamo ururimi",
       offendersContent: "murakaza neza ku rupapuro rwa kabiri",
       educationTitle: "Inyigisho",
@@ -63,15 +63,15 @@ function changeLanguage(lang) {
 
 }
 // Function to update the language button text
-function updateLanguageButtonText() {
+function updateLanguageButtonText(lang) {
   const languageNames = {
     en: 'English',
     rw: 'Kinyarwanda',
     fr: 'French'
   };
-  document.getElementById('languageBtn').textContent = languageNames[en];
+  document.getElementById('languageBtn').textContent = languageNames[lang];
 }
-
+//this is object function to change langage based on user click
 document.querySelectorAll('.language-options button').forEach(button => {
   button.addEventListener('click', function() {
     const lang = this.getAttribute('data-lang');
@@ -80,7 +80,7 @@ document.querySelectorAll('.language-options button').forEach(button => {
     closeDropdown(none);
   });
 });
-
+//this is eventListener that will happen when user click
   document.addEventListener('click', function(event) {
   const languageOptions = document.querySelector('.language-options');
   const languageSelector = document.querySelector('.language-selector');
@@ -93,7 +93,7 @@ document.querySelectorAll('.language-options button').forEach(button => {
 // Event listener for language button click to toggle the dropdown
 document.getElementById('languageBtn').addEventListener('click', function() {
   const languageOptions = document.querySelector('.language-options');
-  languageOptions.style.display = languageOptions.style.display === 'block' ? 'none' : 'block';
+  languageOptions.style.display = languageOptions.style.display === 'none' ? 'block' : 'none';
 });
 
 
@@ -103,8 +103,8 @@ document.querySelectorAll('.language-options button').forEach(button => {
   button.addEventListener('click', function() {
     const lang = this.getAttribute('data-lang');
     changeLanguage(lang);
-    updateLanguageButtonText(lang);
-    closeDropdown();
+    updateLanguageButtonText();
+    closeDropdown(lang);
   });
 });
 
@@ -123,6 +123,8 @@ document.querySelectorAll('.language-options button').forEach(button => {
 
 
 // Set the default language to English
-const defaultLanguage = 'en';
+const defaultLanguage = 'rw';
 changeLanguage(defaultLanguage);
+
+
 

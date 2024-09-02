@@ -1,0 +1,33 @@
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+.search-button{
+  background-color: #0056b3;
+  border: none;
+  padding: 12px 25px;
+  color: white;
+  margin-left: 20px;
+  border-radius: 6px;
+
+}
+.input-content{
+  padding: 10px 10px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+}
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+
+

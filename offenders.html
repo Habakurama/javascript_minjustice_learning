@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="rw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sex Offender Registry</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/Offenders.css">
+    
+</head>
+<body>
+
+  <header>
+    <div class="nppa_log_and_contant">
+        <img src="image/logo_small.svg.png" alt="NPPA Logo">
+        <p class="nppa_contant">NPPA Sex Offenders Registry</p>
+    </div>
+
+    <div class="rwanda_coat_and_contant">
+        <img src="image/Coat_of_arms_of_Rwanda.svg" alt="Logo">
+        <p class="log_contant">Republic of Rwanda </p>
+    </div>
+</header>
+
+<nav>
+    <img src="icons/home.svg" alt="icon" class="home-icon"><a href="index.html" id="home">Home</a>
+    <img src="icons/explore.svg" alt="icon" class="home-icon"><a href="Contact.html" id="contact">Contact Us</a>
+    <img src="icons/notifications.svg" alt="icon" class="home-icon"><a href="Faque.html" id="faqs">FAQs</a>
+    <div class="language-selector">
+        <button id="languageBtn">Choose Language</button>
+        <div class="language-options">
+          
+          <div><button data-lang="en"><img src="image/Flag-United-Kingdom.webp" alt="English" class="all-flags">English </button></div>
+          
+          <div><button data-lang="rw"><img src="image/rwanda-flag.jpg" alt="Kinyarwanda" class="all-flags">Kinyarwanda</button></div>
+          
+          <div><button data-lang="fr"><img src="image/france flag.jpg" alt="French" class="all-flags">French</button></div>
+        </div>
+     </div>
+</nav>
+<main>
+<section class="search">
+  <h4>Munshingano SOR ifite hamo kubika amakuru ajyanye nabahamwe nibyaha byihohoterwa rishingiye kugitstina</h4>
+  <input type="text" id="searchInput" placeholder="Shakisha ukoresheje izina.." class="input-content">
+  <button onclick="
+  searchOffender()
+  " class="search-button">kanda ushakishe...</button>
+</section>
+<section class="results">
+  <h4>Reba abahamwe nibyaha</h4>
+  <table id="resultsTable">
+      <thead>
+          <tr>
+              <th>Amazina yuwakoz'icyaha</th>
+              <th>Imyaka</th>
+              <th>Aho atuye</th>
+              <th>Icyaha yahoze</th>
+              <!-- 
+              <th><button class="view-button">👁</button></th>
+              -->
+             
+          </tr>
+      </thead>
+      <tbody>
+          <!-- Results will be inserted here by JavaScript -->
+      </tbody>
+  </table>
+</section>
+</main>
+<script src="Script/script.js"></script>
+<script src="Script/offenders.js"></script>
+       
+    </script>
+</body>
+</html>

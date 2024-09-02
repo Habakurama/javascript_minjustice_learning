@@ -1,0 +1,81 @@
+
+.content-section{
+  display: flex;
+  justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   gap: 1f;
+   background-color: rgb(197, 197, 197);
+   padding: 20px;
+   border-radius: 20px;
+ 
+}
+.content-section h2{
+  display: block;
+  text-align: center;
+  margin-left: 100px;
+}
+.form-info{
+  display: block;
+  background-color: #0056b3;
+ border-radius: 20px;
+ text-align: center;
+  padding: 20px;
+  width: 200px;
+  color: white;
+  font-size: 20px;
+  flex-wrap: wrap;
+   border: 1px solid ;
+   border-color: #0056b3;
+}
+.contact-info{
+  
+  display: inline-block;
+  text-align: center;
+ background-color: #e3e3e3;
+ padding: 40px;
+ border-radius: 20px;
+ flex-wrap: wrap;
+ border: 1px solid ;
+ border-color: #0056b3;
+}
+
+.sevices{
+  display: block;
+  text-align: center;
+ background-color: #e3e3e3;
+ padding: 40px;
+ border-radius: 20px;
+ flex-wrap: wrap;
+ border: 1px solid ;
+ border-color: #0056b3;
+}
+.sevices a{
+  text-decoration: none;
+  color: #0056b3;
+}
+.info-button{
+  background-color: #e3e3e3;
+  padding: 30px;
+  border: 1px solid ;
+  border-color: #0056b3;
+  border-radius: 20px;
+}
+.horizontal-line{
+  background-color: black;
+  height: 1.5px;
+}
+.form-group input:focus{
+outline: 0px;
+}
+.form-group.success input{
+  border-color: green;
+}
+.form-group.error input{
+  border-color: rgb(128, 0, 0);
+}
+.form-group .error{
+  border-color: rgb(128, 0, 0);
+  font-size: 9px;
+  height: 13px;
+}
