@@ -1,0 +1,55 @@
+.contant{
+ display: block;
+ justify-content: center;
+ align-items: center;
+ 
+}
+
+
+ p{
+  display: inline;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0px;
+  line-height: 1.9;
+  width: fit-content;
+
+}
+
+.name-footer{
+  color: #0056b3;
+  background-color: #f0f0f0;
+  padding: 12px;
+  text-align: center;
+  
+
+}
+h3{
+  color: #0056b3;
+  background-color: #f0f0f0;
+  padding: 120px;
+  text-align: center;
+ 
+}
+
+#image {
+  /* the image you want to 'watermark' */
+  height: 100%; /* or whatever, equal to the image you want 'watermarked' */
+  width: 100%; /* as above */
+  background-image: url("image/logo_small.svg.png" );
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  position: relative;
+  }
+  
+  #image img {
+    height: 100%; /* or whatever, equal to the image you want 'watermarked' */
+  width: 100%;
+  /* the actual 'watermark' */
+  position: absolute;
+  top: 0; /* or whatever */
+  left: 0; /* or whatever, position according to taste */
+  opacity: 0.1; /* Firefox, Chrome, Safari, Opera, IE >= 9 (preview) */
+  filter:alpha(opacity=50); /* for <= IE 8 */
+  
+  }
