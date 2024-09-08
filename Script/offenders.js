@@ -7,13 +7,15 @@ const offenders = [
   { name: 'Mutuyimana xxxxxxxx', age: 34, location: 'Nyakabanda', crime: 'gufata kungufu' },
   { name: 'Sezibera yyyyyyyyy', age: 54, location: 'Kanombe', crime: 'guhohotera umugore' },
   { name: 'Bihoyiki zzzzzzzzzz', age: 45, location: 'Nyamagabe', crime: 'gufata kungufu'}
+  
 ];
+
 // This function is for each offender being seached in seach box
 function searchOffender() {
   const searchInput = document.getElementById('searchInput').value.toLowerCase();
   const resultsTable = document.getElementById('resultsTable').getElementsByTagName('tbody')[0];
   resultsTable.innerHTML = '';
-//this has responsiblity to store all information provided on array called offenders and then return its on all information off offender based on the name searched or location
+//this has responsiblity to store all information provided on array  called offenders and then return  information of offender based on the name searched or location
   const filteredOffenders = offenders.filter(offender => {
       return (
           offender.name.toLowerCase().includes(searchInput) ||
