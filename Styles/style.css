@@ -6,6 +6,9 @@ body {
 top: 0px;
 bottom: 0px;
 width: 100%;
+overflow-x: hidden;
+overflow-y: scroll;
+scroll-behavior: smooth;
 
 }
 
@@ -16,7 +19,8 @@ header {
   padding: 10px;
   background-color: #f0f0f0;
   width: 100%;
-  
+  overflow-x: hidden;
+ 
 }
 
 header img {
@@ -47,6 +51,7 @@ nav {
   height: 20px;
   align-items: center;
   width: 100%;
+  
 }
 
 nav a {

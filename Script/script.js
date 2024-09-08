@@ -21,7 +21,7 @@ const translations = {
       mainTitle: "Ikigo cy'Igihugu Gishinzwe Ubushinjacyaha (NPPA) Urutonde rw'Abakoze Ibyaha byo Gufata ku Ngufu",
       remarksTitle: "Ibisobanuro",
       remarksContent: "murakaza neza ku rupapuro rwa mbere",
-      offendersTitle: "Abahamijwe ibyaha Ibyaha",
+      offendersTitle: "Abahamijwe ibyaha",
       languageBtn: "Hitamo ururimi",
       offendersContent: "murakaza neza ku rupapuro rwa kabiri",
       educationTitle: "Inyigisho",
