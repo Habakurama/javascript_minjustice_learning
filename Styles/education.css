@@ -1,12 +1,23 @@
 
+p{
+  display:inline;
+  text-indent: 50px;
+  line-height: 1.8;
+}
+li{
+  text-indent: 50px;
+  line-height: 1.8;
+  text-decoration: none;
+}
 h1, h2 {
-  color: #2c3e50;
+  color: #0056b3;
 }
 .section {
   background-color: #f9f9f9;
   border-radius: 5px;
   padding: 20px;
   margin-bottom: 20px;
+
 }
 .info-box {
   background-color: #e8f4fd;
@@ -19,7 +30,7 @@ h1, h2 {
   padding: 20px;
   border-radius: 5px;
 }
-button {
+.button1 {
   background-color: #3498db;
   color: white;
   border: none;

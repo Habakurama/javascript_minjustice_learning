@@ -1,4 +1,4 @@
-
+fetch("https://sor.nppa.gov.rw/publishedOffenders")
 //this might come from an API)
 const offenders = [
   { name: 'Habiyakare xxxxxxxx', age: 34, location: 'Nyakabanda', crime: 'gufata kungufu' },
@@ -20,6 +20,7 @@ function searchOffender() {
       return (
           offender.name.toLowerCase().includes(searchInput) ||
           offender.location.toLowerCase().includes(searchInput)
+          
       );
   });
 // this is for crossing to each record and desplayed based on table developed in html

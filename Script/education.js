@@ -3,10 +3,10 @@ function checkAnswer(answer) {
   const resultElement = document.getElementById("result");
   
   if (answer === correctAnswer) {
-      resultElement.textContent = "Correct! The primary purpose of a Sex Offender Registry is to increase public safety.";
+      resultElement.textContent = "Intego nyamukuru y’Urutonde rw’abahamijwe ibyaha by’ihohotera rishingiye ku gitsina ni ukongera umutekano rusange binyuze mu gukurikirana no gukurikiranira hafi abantu bahamwe n’ibyaha by’ihohotera rishingiye ku gitsina.";
       resultElement.style.color = "green";
   } else {
-      resultElement.textContent = "Incorrect. The primary purpose of a Sex Offender Registry is to increase public safety.";
+      resultElement.textContent = "Ikitaticyo! Intego nyamukuru y’Urutonde rw’abahamijwe ibyaha by’ihohotera rishingiye ku gitsina ni ukongera umutekano rusange.";
       resultElement.style.color = "red";
   }
 }
