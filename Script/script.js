@@ -7,11 +7,11 @@ const translations = {
       mainTitle: "National Public Prosecution Authority (NPPA) Sex Offender Registry",
       remarksTitle: "Remarks",
       languageBtn: "Choose Language",
-      remarksContent: "welcome to first page",
+      remarksContent: "The National Public Prosecution Authority, among its responsibilities, includes...",
       offendersTitle: "Offenders",
-      offendersContent: "welcome to second page",
+      offendersContent: "Those convicted of gender-based violence, their information...",
       educationTitle: "Educational Content",
-      educationContent: "welcome to third page",
+      educationContent: "Various lessons on how to prevent gender-based violence...",
       viewMore: "View More →",
   },
   rw: {
@@ -20,12 +20,12 @@ const translations = {
       faqs: "Ibibazo Bikunze Kubazwa",
       mainTitle: "Ikigo cy'Igihugu Gishinzwe Ubushinjacyaha (NPPA) Urutonde rw'Abakoze Ibyaha byo Gufata ku Ngufu",
       remarksTitle: "Ibisobanuro",
-      remarksContent: "murakaza neza ku rupapuro rwa mbere",
+      remarksContent: "Ubushinjacyaha Bukuru, munshingano bufite,harimo.. ",
       offendersTitle: "Abahamijwe ibyaha",
       languageBtn: "Hitamo ururimi",
-      offendersContent: "murakaza neza ku rupapuro rwa kabiri",
+      offendersContent: "Abahamwe nibyaha by'ihohotera rishingiye kugitsina amakuru yabo ",
       educationTitle: "Inyigisho",
-      educationContent: "murakaza neza ku rupapuro rwa gatatu",
+      educationContent: "Inyigisho zinyuranye zijyanye nuburyo wakummira ibyaha byihohorera rishingiye kugitsina",
       viewMore: "Reba Byinshi →"
   },
   fr: {
@@ -35,11 +35,11 @@ const translations = {
       mainTitle: "Autorité Nationale des Poursuites Publiques (NPPA) Registre des Délinquants Sexuels",
       remarksTitle: "Remarques",
       languageBtn: "choisir la langue",
-      remarksContent: "bienvenue sur la première page",
+      remarksContent: "Le Parquet Général, parmi ses responsabilités, inclut...",
       offendersTitle: "Délinquants",
-      offendersContent: "bienvenue sur la deuxième page",
+      offendersContent: "Ceux reconnus coupables de violences basées sur le genre, leurs informations...",
       educationTitle: "Contenu Éducatif",
-      educationContent: "bienvenue sur la troisième page",
+      educationContent: "Différentes leçons sur la manière de prévenir les crimes de violence basée sur le genre...",
       viewMore: "Voir Plus →"
   }
   
@@ -125,6 +125,9 @@ document.querySelectorAll('.language-options button').forEach(button => {
 // Set the default language to English
 const defaultLanguage = 'rw';
 changeLanguage(defaultLanguage);
+
+let element = document.getElementById('#educationContent');
+element.textContent = element.textContent.replace(/\m+/g, '').trim();
 
 
 
